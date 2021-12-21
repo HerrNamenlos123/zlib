@@ -25,3 +25,7 @@ project "zlib"
 	}
 
 	defines { "verbose=-1" }    -- Stop "bit length overflow" warning
+
+	ZLIB_INCLUDE_DIRS = { _SCRIPT_DIR .. "/include" }
+	ZLIB_LINK_DIRS = { _SCRIPT_DIR .. "/bin/" }
+	ZLIB_LINKS = { "zlib" }
